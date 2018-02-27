@@ -42,6 +42,9 @@
   <PropertyGroup Condition="'$(TargetFramework)'=='net45'">
     <DefineConstants>NET45</DefineConstants>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <DefineConstants>WITH_ITCC_LOGGING</DefineConstants>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="ITCC.Logging.Core" Version="3.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
