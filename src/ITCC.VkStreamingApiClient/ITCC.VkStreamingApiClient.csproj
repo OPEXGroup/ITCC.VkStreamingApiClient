@@ -42,4 +42,7 @@
   <PropertyGroup Condition="'$(TargetFramework)'=='net45'">
     <DefineConstants>NET45</DefineConstants>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="ITCC.Logging.Core" Version="3.0.0" />
+  </ItemGroup>
 </Project>
