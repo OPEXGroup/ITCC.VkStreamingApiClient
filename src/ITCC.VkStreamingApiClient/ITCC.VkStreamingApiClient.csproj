@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.3;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
     <Version>0.1.0</Version>
     <AssemblyVersion>0.1.0.0</AssemblyVersion>
     <FileVersion>0.1.0.0</FileVersion>
@@ -28,18 +28,30 @@
     <DebugSymbols>False</DebugSymbols>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard1.3|AnyCPU'">
-    <DocumentationFile>..\..\build\ITCC.YandexSpeechKitClient\Release\netstandard1.3\ITCC.YandexSpeechKitClient.xml</DocumentationFile>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <DocumentationFile>..\..\build\ITCC.YandexSpeechKitClient\Release\netstandard2.0\ITCC.YandexSpeechKitClient.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net45|AnyCPU'">
     <DocumentationFile>..\..\build\ITCC.YandexSpeechKitClient\Release\net45\ITCC.YandexSpeechKitClient.xml</DocumentationFile>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework)'=='netstandard1.3'">
-    <DefineConstants>NETSTANDARD1_3</DefineConstants>
+  <PropertyGroup Condition="'$(TargetFramework)'=='netstandard2.0'">
+    <DefineConstants>NETSTANDARD2_0</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(TargetFramework)'=='net45'">
     <DefineConstants>NET45</DefineConstants>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <DefineConstants>WITH_ITCC_LOGGING</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="ITCC.Logging.Core" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+    <Reference Include="System.Net.Http"></Reference>
+    <Reference Include="System"></Reference>
+  </ItemGroup>
 </Project>

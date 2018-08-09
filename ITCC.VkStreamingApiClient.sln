@@ -12,7 +12,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITCC.VkStreamingApiClient", "src\ITCC.VkStreamingApiClient\ITCC.VkStreamingApiClient.csproj", "{87819F83-9677-4659-8D13-7AF95322F00E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITCC.VkStreamingApiClient", "src\ITCC.VkStreamingApiClient\ITCC.VkStreamingApiClient.csproj", "{87819F83-9677-4659-8D13-7AF95322F00E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "testing", "testing", "{FBBB4E79-B0D1-45FF-A71F-115F7E5E2FDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "testing\TestConsole\TestConsole.csproj", "{FCFD0C5B-A336-4D81-9FDE-F425C4E7A74A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,12 +28,17 @@ Global
 		{87819F83-9677-4659-8D13-7AF95322F00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87819F83-9677-4659-8D13-7AF95322F00E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87819F83-9677-4659-8D13-7AF95322F00E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCFD0C5B-A336-4D81-9FDE-F425C4E7A74A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCFD0C5B-A336-4D81-9FDE-F425C4E7A74A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCFD0C5B-A336-4D81-9FDE-F425C4E7A74A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCFD0C5B-A336-4D81-9FDE-F425C4E7A74A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{87819F83-9677-4659-8D13-7AF95322F00E} = {DAB0E555-732B-471E-B63F-BAD81B748F40}
+		{FCFD0C5B-A336-4D81-9FDE-F425C4E7A74A} = {FBBB4E79-B0D1-45FF-A71F-115F7E5E2FDE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2AC685F-7926-45C1-A70D-BC7D21846842}
